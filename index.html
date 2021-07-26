@@ -1,0 +1,1105 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <link rel="SHORTCUT ICON" href="img/favicon.ico" />
+    <link rel="icon" href="img/favicon.ico" type="image/ico" />
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lan' s Portfolio</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css" />
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/animate.css" />
+    <script src="js/jquery-1.11.3.min.js"></script>
+    <script src="js/bootstrap.js"></script>
+</head>
+<script>
+    $(window).scroll(function(){
+  //滑動後固定上方選單
+  if($(this).scrollTop()>100){
+  $('.navbar').addClass('navbar-fixed-top animated fadeInDown');
+  } else {
+  $('.navbar').removeClass('navbar-fixed-top animated fadeInDown');
+  }
+  });
+  //點擊事件
+  $(document).ready(function(e) {
+  //點擊滑動至該區塊
+  $(".home").click(function(){
+  $("html,body").animate({scrollTop:"0px"},800);
+  });
+  $(".portfolio").click(function(){
+  $("html,body").animate({scrollTop:$("#portfolio").position().top},800);
+  });
+  $(".about").click(function(){
+  $("html,body").animate({scrollTop:$("#about").position().top},800);
+  });
+  $(".webdesign").click(function(){
+  $("#webworks").css({display:"block"});
+  $("#illworks").css({display:"none"});
+  $("#uiworks").css({display:"none"});
+  $('.webdesign').addClass('now');
+  $('.illdesign').removeClass('now');
+  $('.uidesign').removeClass('now');
+  });
+  $(".illdesign").click(function(){
+  $("#webworks").css({display:"none"});
+  $("#illworks").css({display:"block"});
+  $("#uiworks").css({display:"none"});
+  $('.illdesign').addClass('now');
+  $('.uidesign').removeClass('now');
+  $('.webdesign').removeClass('now');
+  });
+  $(".uidesign").click(function(){
+  $("#webworks").css({display:"none"});
+  $("#illworks").css({display:"none"});
+  $("#uiworks").css({display:"block"});
+  $('.uidesign').addClass('now');
+  $('.illdesign').removeClass('now');
+  $('.webdesign').removeClass('now');
+  
+  });
+  
+  });
+  </script>
+
+<body>
+    <div id="header">
+        <div class="navbar navbar-default">
+            <div class="container"> <a href="#" class="logo">Lazylan</a>
+                <button class="navbar-toggle" data-toggle="collapse" data-target=".navHeaderMenu"> <span class="icon-bar"></span> <span class="icon-bar"></span> <span class="icon-bar"></span> </button>
+                <div class="collapse navbar-collapse navHeaderMenu" id="navHeaderMenu">
+                    <ul class="mainMenu">
+                        <li class="portfolio"><a href="#portfolio">Portfolio</a></li>
+                        <li class="about"><a href="#about">AboutMe</a></li>
+                        <li class="contact"><a href="mailto:lastest@hotmail.com.tw">Contact</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div id="home">
+            <div class="container">
+                <div class="row title">
+                    <div class="col-lg-12">
+                        <h1 class="animated fadeInDown">Design Is Simple. <br> But Simple Is Difficult.</h1>
+                        <p>平凡成就不平凡</p>
+                    </div>
+                </div>
+                <div id="mainVisual"></div>
+            </div>
+        </div>
+        <div id="portfolio">
+            <div class="container">
+                <div class="row title">
+                    <div class="col-lg-12 text-center">
+                        <h1>Portfolio</h1>
+                        <p>作品集</p>
+                    </div>
+                </div>
+                <div id="worksMenu">
+                    <ul>
+                        <li class="webdesign now"><a href="#portfolio">Website</a></li>
+                        <li class="illdesign"><a href="#portfolio">Illustration</a></li>
+                        <li class="uidesign"><a href="#portfolio">UI</a></li>
+                    </ul>
+                </div>
+                <div id="webworks" class="works">
+                    <ul>
+                        <li class="col-sm-3"><a href="#portfolioWeb19" data-toggle="modal"><img src="img/work_19.jpg" class="img-responsive" alt="acer liquid life">
+                                <!-- <h2>cer liquid life</h2> -->
+                            </a> </li>
+                        <li class="col-sm-3"><a href="#portfolioWeb20" data-toggle="modal"><img src="img/work_20.jpg" class="img-responsive" alt="台達之星">
+                                <!-- <h2>台達之星</h2> -->
+                            </a> </li>
+                        <li class="col-sm-3"><a href="#portfolioWeb21" data-toggle="modal"><img src="img/work_21.jpg" class="img-responsive" alt="office 2016">
+                                <!-- <h2>office2016</h2> -->
+                            </a> </li>
+                        <li class="col-sm-3"><a href="#portfolioWeb22" data-toggle="modal"><img src="img/work_22.jpg" class="img-responsive" alt="visual studio">
+                                <!-- <h2>visual studio</h2> -->
+                            </a> </li>
+                        <li class="col-sm-3"><a href="#portfolioWeb23" data-toggle="modal"><img src="img/work_23.jpg" class="img-responsive" alt="luxgen 天菜指南">
+                                <!-- <h2>luxgen 天菜指南</h2> -->
+                            </a> </li>
+                        <li class="col-sm-3"><a href="#portfolioWeb17" data-toggle="modal"> <img src="img/work_17.jpg" class="img-responsive" alt="小花仙官網">
+                                <!-- <h2>小花仙官網</h2> -->
+                            </a></li>
+                        <li class="col-sm-3"><a href="#portfolioWeb18" data-toggle="modal"> <img src="img/work_18.jpg" class="img-responsive" alt="熱血精靈派官網">
+                                <!-- <h2>熱血精靈派官網</h2> -->
+                            </a></li>
+                        <li class="col-sm-3"><a href="#portfolioWeb3" data-toggle="modal"> <img src="img/work_03.jpg" class="img-responsive" alt="AS活動網頁七月大改版">
+                                <!-- <h2>百變兵團活動網頁</h2> -->
+                            </a></li>
+                        <li class="col-sm-3"><a href="#portfolioWeb4" data-toggle="modal"> <img src="img/work_04.jpg" class="img-responsive" alt="AS活動網頁九月">
+                                <!-- <h2>百變兵團活動網頁</h2> -->
+                            </a></li>
+                        <li class="col-sm-3"><a href="#portfolioWeb5" data-toggle="modal"> <img src="img/work_05.jpg" class="img-responsive" alt="AS活動網頁十二月">
+                                <!-- <h2>百變兵團活動網頁</h2> -->
+                            </a></li>
+                        <li class="col-sm-3"><a href="#portfolioWeb6" data-toggle="modal"><img src="img/work_06.jpg" class="img-responsive" alt="AS活動網頁四月">
+                                <!-- <h2>百變兵團活動網頁</h2> -->
+                            </a></li>
+                        <li class="col-sm-3"><a href="#portfolioWeb7" data-toggle="modal"><img src="img/work_07.jpg" class="img-responsive" alt="AS活動網頁四月">
+                                <!-- <h2>百變兵團活動網頁</h2> -->
+                            </a></li>
+                        <li class="col-sm-3"><a href="#portfolioWeb8" data-toggle="modal"><img src="img/work_08.jpg" class="img-responsive" alt="DDT活動網頁七夕">
+                                <!-- <h2>彈彈堂3活動網頁</h2> -->
+                            </a></li>
+                        <li class="col-sm-3"><a href="#portfolioWeb9" data-toggle="modal"><img src="img/work_09.jpg" class="img-responsive" alt="DDT活動網頁夏季大改版">
+                                <!-- <h2>彈彈堂3遊戲活動網頁</h2> -->
+                            </a></li>
+                        </li>
+                        <li class="col-sm-3"><a href="#portfolioWeb10" data-toggle="modal"><img src="img/work_10.jpg" class="img-responsive" alt="DDT活動網頁新年大改版">
+                                <!-- <h2>彈彈堂3遊戲活動網頁</h2> -->
+                            </a></li>
+                        <li class="col-sm-3"><a href="#portfolioWeb11" data-toggle="modal"><img src="img/work_11.jpg" class="img-responsive" alt="DDT活動網頁聖誕節改版">
+                                <!-- <h2>彈彈堂3遊戲活動網頁</h2> -->
+                            </a></li>
+                        <li class="col-sm-3"><a href="#portfolioWeb12" data-toggle="modal"><img src="img/work_12.jpg" class="img-responsive" alt="DDT活動網頁聖誕節改版">
+                                <!-- <h2>彈彈堂3遊戲活動網頁</h2> -->
+                            </a></li>
+                        <li class="col-sm-3"><a href="#portfolioWeb13" data-toggle="modal"><img src="img/work_13.jpg" class="img-responsive" alt="兒童節聯合活動網頁">
+                                <!-- <h2>淘米套圈圈</h2> -->
+                        </li>
+                        <li class="col-sm-3"><a href="#portfolioWeb14" data-toggle="modal"><img src="img/work_14.jpg" class="img-responsive" alt="母親節聯合活動網頁">
+                                <!-- <h2>媽咪您辛苦了</h2> -->
+                            </a> </li>
+                        <li class="col-sm-3"><a href="#portfolioWeb15" data-toggle="modal"><img src="img/work_15.jpg" class="img-responsive" alt="萬聖節聯合活動網頁">
+                                <!-- <h2>Happy Halloween</h2> -->
+                            </a> </li>
+                        <li class="col-sm-3"><a href="#portfolioWeb16" data-toggle="modal"><img src="img/work_16.jpg" class="img-responsive" alt="聯合公益網頁">
+                                <!-- <h2>羅慧夫聯合公益網頁</h2> -->
+                            </a> </li>
+                        <li class="col-sm-3"> <a href="#portfolioWeb1" data-toggle="modal"> <img src="img/work_01.jpg" class="img-responsive" alt="格蘭菲迪官網">
+                                <!-- <h2>Glenfiddich官網</h2> -->
+                            </a> </li>
+                        <li class="col-sm-3"> <a href="#portfolioWeb2" data-toggle="modal"><img src="img/work_02.jpg" class="img-responsive" alt="Dulux空間色彩大賞">
+                                <!-- <h2>Dulux空間色彩大賞</h2> -->
+                            </a></li>
+                    </ul>
+                </div>
+                <div id="illworks" class="works">
+                    <ul>
+                        <li class="col-sm-3"> <a href="#portfolioIll1" data-toggle="modal"> <img src="img/work_ill_01.jpg" class="img-responsive" alt="作品集封面">
+                                <!-- <h2>Portfolio</h2>
+            <h3>簽字筆+Photoshop</h3> -->
+                            </a> </li>
+                        <li class="col-sm-3"> <a href="#portfolioIll2" data-toggle="modal"><img src="img/work_ill_02.jpg" class="img-responsive" alt="繪本封面">
+                                <!-- <h2>皮毛的春天</h2>
+            <h3>壓克力顏料</h3> -->
+                            </a></li>
+                        <li class="col-sm-3"><a href="#portfolioIll3" data-toggle="modal"> <img src="img/work_ill_03.jpg" class="img-responsive" alt="手繪圖">
+                                <!-- <h2>童。趣</h2>
+            <h3>代針筆</h3> -->
+                            </a></li>
+                        <li class="col-sm-3"><a href="#portfolioIll4" data-toggle="modal"> <img src="img/work_ill_04.jpg" class="img-responsive" alt="電繪圖">
+                                <!-- <h2>地心引力</h2>
+            <h3>Photoshop</h3> -->
+                            </a></li>
+                        <li class="col-sm-3"><a href="#portfolioIll5" data-toggle="modal"> <img src="img/work_ill_05.jpg" class="img-responsive" alt="小遊戲封面">
+                                <!-- <h2>Hey!Thief!(遊戲)</h2>
+            <h3>Flash</h3> -->
+                            </a></li>
+                        <li class="col-sm-3"><a href="#portfolioIll6" data-toggle="modal"> <img src="img/work_ill_06.jpg" class="img-responsive" alt="角色設計">
+                                <!-- <h2>互動專案角色設計(12隻)</h2>
+            <h3>Flash</h3> -->
+                            </a></li>
+                        <li class="col-sm-3"><a href="#portfolioIll7" data-toggle="modal"> <img src="img/work_ill_07.jpg" class="img-responsive" alt="小遊戲內頁">
+                                <!-- <h2>Not!Me!(遊戲)</h2>
+            <h3>Flash</h3> -->
+                            </a></li>
+                        <li class="col-sm-3"><a href="#portfolioIll8" data-toggle="modal"> <img src="img/work_ill_08.jpg" class="img-responsive" alt="手繪圖">
+                                <!-- <h2>朝代角色設計</h2>
+            <h3>代針筆</h3> -->
+                            </a></li>
+                    </ul>
+                </div>
+                <div id="uiworks" class="works">
+                    <ul>
+                        <li class="col-sm-3"> <a href="#portfolioUi01" data-toggle="modal"> <img src="img/work_ui_01.jpg" class="img-responsive" alt="app設計">
+                                <!-- <h2>APP專案美術設計</h2>
+            <h3>2015</h3> -->
+                            </a> </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div id="about">
+            <div class="container">
+                <div class="row title">
+                    <div class="col-lg-12 text-center">
+                        <h1>AboutMe</h1>
+                        <p>我喜歡用照片寫生活，用塗鴉畫人生，用文字咀嚼每一天。</p>
+                    </div>
+                </div>
+                <div id="lanphoto" class="wow bounceIn"></div>
+                <div id="info">
+                    <ul>
+                        <li class="about-title">
+                            <h2 class="text-center">小嵐 Lan</h2><br />
+                        </li>
+                        <li>▿<span class="about-title">信箱 mail：</span><a href="mailto:lastest@hotmail.com.tw">lastest@hotmail.com.tw</a></br>
+                        <li>▿<span class="about-title">線上作品集：</span><a href="http://issuu.com/hsiaolanchiu/docs/lan_sportfolio">翻頁作品集</a></br>
+                            </br>
+                        </li>
+                        <li>▾<span class="about-title">學歷 Education：</span><br />
+                            &nbsp;&nbsp;元智大學 資訊傳播學系</li>
+                        <li>▿<span class="about-title">經歷 Experience：</span><br />
+                            &nbsp;&nbsp; ．2016/6～2017/9，18Design 網頁設計師
+                            <p>網頁維護優化，活動網頁視覺設計及切版、電子報、社群廣告圖設計、UI動線規劃、協助設計同仁切版、與前端工程師溝通</p>
+                            &nbsp;&nbsp; ．2015/8~2016/3，數位因子　網頁設計師
+                            <p>優化、維護舊有網站，公司模板資料搜集設計，文案上稿，活動、電商網站、官網視覺設計及RWD切版製作，廣告banner製作，主要使用bootstrap跟scss切版。</p>
+                            &nbsp;&nbsp; ．2013/11~2015/5，台灣淘米　美術設計師
+                            <p>活動網頁、官方網頁視覺、切版製作，Flash動、靜態banner製作、APP UI設計。</p>
+                            &nbsp;&nbsp; ．2012/07~2012/09，科瑪數位 互動實習生
+                            <p>主要擔任互動設計助理，負責排版、動畫腳本設計、活動專案角色設計、協助客服及部分庶務工作。</p>
+                        </li>
+                        <li>▾<span class="about-title">專長 Speciality：</span><br />
+                            &nbsp;&nbsp;官網、活動網頁RWD視覺風格設計<br />
+                            &nbsp;&nbsp;EDM、Banner、數位插圖、海報設計<br />
+                            &nbsp;&nbsp;UI/UX 動線規劃<br />
+                            &nbsp;&nbsp;網頁切版、元件動態設計<br />
+                            &nbsp;&nbsp;網站維護優化
+                            &nbsp;&nbsp;</li>
+                        <li>▿<span class="about-title">人格特質 Personality：</span><br />
+                            &nbsp;&nbsp;愛笑但認真的時候臉很臭、喜歡新奇新鮮怪怪的事物、喜歡看別人的笑容</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div id="footer">
+            <p class="text-center">Copyright © 2021 Lan All rights reserved</p>
+        </div>
+        <!--網頁作品集內頁-->
+        <div class="portfolio-modal modal fade" id="portfolioWeb1" tabindex="-1" role="dialog" aria-hidden="true">
+            <div class="modal-content">
+                <div class="close-modal" data-dismiss="modal">
+                    <div class="lr">
+                        <div class="rl"> </div>
+                    </div>
+                </div>
+                <div class="container">
+                    <div class="row">
+                        <div class="col-lg-8 col-lg-offset-2">
+                            <div class="modal-body">
+                                <h2>Glenfiddich官網、活動頁</h2>
+                                <hr class="star-primary">
+                                <img src="img/portfolio/webwork_01.jpg" class="img-responsive img-centered" alt="">
+                                <p>JavaScript、JQuery、CSS、Html</p>
+                                <br />
+                                <p><a href="http://www.glenfiddich.com.tw/" target="_blank">連結 Link</a></p>
+                                <br />
+                                <p>Date:<strong>July 2013</strong></p>
+                                <br />
+                                <button type="button" class="btn btn-default" data-dismiss="modal"><i class="fa fa-times"></i> Close</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="portfolio-modal modal fade" id="portfolioWeb2" tabindex="-1" role="dialog" aria-hidden="true">
+            <div class="modal-content">
+                <div class="close-modal" data-dismiss="modal">
+                    <div class="lr">
+                        <div class="rl"> </div>
+                    </div>
+                </div>
+                <div class="container">
+                    <div class="row">
+                        <div class="col-lg-8 col-lg-offset-2">
+                            <div class="modal-body">
+                                <h2>Dulux空間色彩大賞</h2>
+                                <hr class="star-primary">
+                                <img src="img/portfolio/webwork_02.jpg" class="img-responsive img-centered" alt="">
+                                <p>JavaScript、JQuery、CSS、Html、Photoshop</p>
+                                <br />
+                                <p><a href="http://www.letscolor.com.tw/event/2013coloraward/" target="_blank">連結 Link</a></p>
+                                <br />
+                                <p>Date:<strong>August 2013</strong></p>
+                                <br />
+                                <button type="button" class="btn btn-default" data-dismiss="modal"><i class="fa fa-times"></i> Close</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="portfolio-modal modal fade" id="portfolioWeb3" tabindex="-1" role="dialog" aria-hidden="true">
+            <div class="modal-content">
+                <div class="close-modal" data-dismiss="modal">
+                    <div class="lr">
+                        <div class="rl"> </div>
+                    </div>
+                </div>
+                <div class="container">
+                    <div class="row">
+                        <div class="col-lg-8 col-lg-offset-2">
+                            <div class="modal-body">
+                                <h2>百變兵團-復活島大作戰</h2>
+                                <hr class="star-primary">
+                                <img src="img/portfolio/webwork_03.jpg" class="img-responsive img-centered" alt="">
+                                <p>Html、CSS、Photoshop</p>
+                                <br />
+                                <p>Date:<strong>June 2014</strong></p>
+                                <br />
+                                <button type="button" class="btn btn-default" data-dismiss="modal"><i class="fa fa-times"></i> Close</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="portfolio-modal modal fade" id="portfolioWeb4" tabindex="-1" role="dialog" aria-hidden="true">
+            <div class="modal-content">
+                <div class="close-modal" data-dismiss="modal">
+                    <div class="lr">
+                        <div class="rl"> </div>
+                    </div>
+                </div>
+                <div class="container">
+                    <div class="row">
+                        <div class="col-lg-8 col-lg-offset-2">
+                            <div class="modal-body">
+                                <h2>百變兵團-九月開學繼續嗨!</h2>
+                                <hr class="star-primary">
+                                <img src="img/portfolio/webwork_04.jpg" class="img-responsive img-centered" alt="">
+                                <p>Html、CSS、Photoshop</p>
+                                <br />
+                                <p>Date:<strong>August 2014</strong></p>
+                                <br />
+                                <button type="button" class="btn btn-default" data-dismiss="modal"><i class="fa fa-times"></i> Close</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="portfolio-modal modal fade" id="portfolioWeb5" tabindex="-1" role="dialog" aria-hidden="true">
+            <div class="modal-content">
+                <div class="close-modal" data-dismiss="modal">
+                    <div class="lr">
+                        <div class="rl"> </div>
+                    </div>
+                </div>
+                <div class="container">
+                    <div class="row">
+                        <div class="col-lg-8 col-lg-offset-2">
+                            <div class="modal-body">
+                                <h2>百變兵團-狂歡派對十二月!</h2>
+                                <hr class="star-primary">
+                                <img src="img/portfolio/webwork_05.jpg" class="img-responsive img-centered" alt="">
+                                <p>Html、CSS、Photoshop</p>
+                                <br />
+                                <p>Date:<strong>November 2014</strong></p>
+                                <br />
+                                <button type="button" class="btn btn-default" data-dismiss="modal"><i class="fa fa-times"></i> Close</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="portfolio-modal modal fade" id="portfolioWeb6" tabindex="-1" role="dialog" aria-hidden="true">
+            <div class="modal-content">
+                <div class="close-modal" data-dismiss="modal">
+                    <div class="lr">
+                        <div class="rl"> </div>
+                    </div>
+                </div>
+                <div class="container">
+                    <div class="row">
+                        <div class="col-lg-8 col-lg-offset-2">
+                            <div class="modal-body">
+                                <h2>百變兵團-四月快樂兒童YA!</h2>
+                                <hr class="star-primary">
+                                <img src="img/portfolio/webwork_06.jpg" class="img-responsive img-centered" alt="">
+                                <p>Html、CSS、Photoshop</p>
+                                <br />
+                                <p>Date:<strong>March 2015</strong></p>
+                                <br />
+                                <button type="button" class="btn btn-default" data-dismiss="modal"><i class="fa fa-times"></i> Close</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="portfolio-modal modal fade" id="portfolioWeb7" tabindex="-1" role="dialog" aria-hidden="true">
+            <div class="modal-content">
+                <div class="close-modal" data-dismiss="modal">
+                    <div class="lr">
+                        <div class="rl"> </div>
+                    </div>
+                </div>
+                <div class="container">
+                    <div class="row">
+                        <div class="col-lg-8 col-lg-offset-2">
+                            <div class="modal-body">
+                                <h2>百變兵團-四月花嫁之月!</h2>
+                                <hr class="star-primary">
+                                <img src="img/portfolio/webwork_07.jpg" class="img-responsive img-centered" alt="">
+                                <p>Html、CSS、Photoshop</p>
+                                <br />
+                                <p>Date:<strong>March 2013</strong></p>
+                                <br />
+                                <button type="button" class="btn btn-default" data-dismiss="modal"><i class="fa fa-times"></i> Close</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="portfolio-modal modal fade" id="portfolioWeb8" tabindex="-1" role="dialog" aria-hidden="true">
+            <div class="modal-content">
+                <div class="close-modal" data-dismiss="modal">
+                    <div class="lr">
+                        <div class="rl"> </div>
+                    </div>
+                </div>
+                <div class="container">
+                    <div class="row">
+                        <div class="col-lg-8 col-lg-offset-2">
+                            <div class="modal-body">
+                                <h2>彈彈堂3-七夕愛一起</h2>
+                                <hr class="star-primary">
+                                <img src="img/portfolio/webwork_08.jpg" class="img-responsive img-centered" alt="">
+                                <p>Html、CSS、Photoshop、Flash</p>
+                                <br />
+                                <p>Date:<strong>June 2014</strong></p>
+                                <br />
+                                <button type="button" class="btn btn-default" data-dismiss="modal"><i class="fa fa-times"></i> Close</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="portfolio-modal modal fade" id="portfolioWeb9" tabindex="-1" role="dialog" aria-hidden="true">
+            <div class="modal-content">
+                <div class="close-modal" data-dismiss="modal">
+                    <div class="lr">
+                        <div class="rl"> </div>
+                    </div>
+                </div>
+                <div class="container">
+                    <div class="row">
+                        <div class="col-lg-8 col-lg-offset-2">
+                            <div class="modal-body">
+                                <h2>彈彈堂3-征戰之夏</h2>
+                                <hr class="star-primary">
+                                <img src="img/portfolio/webwork_09.jpg" class="img-responsive img-centered" alt="">
+                                <p>Html、CSS、Photoshop、Flash、JQuery</p>
+                                <br />
+                                <p>Date:<strong>July 2014</strong></p>
+                                <br />
+                                <button type="button" class="btn btn-default" data-dismiss="modal"><i class="fa fa-times"></i> Close</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="portfolio-modal modal fade" id="portfolioWeb10" tabindex="-1" role="dialog" aria-hidden="true">
+            <div class="modal-content">
+                <div class="close-modal" data-dismiss="modal">
+                    <div class="lr">
+                        <div class="rl"> </div>
+                    </div>
+                </div>
+                <div class="container">
+                    <div class="row">
+                        <div class="col-lg-8 col-lg-offset-2">
+                            <div class="modal-body">
+                                <h2>彈彈堂3-新春大改版</h2>
+                                <hr class="star-primary">
+                                <img src="img/portfolio/webwork_10.jpg" class="img-responsive img-centered" alt="">
+                                <p>Html、CSS、Photoshop、Flash</p>
+                                <br />
+                                <p>Date:<strong>January 2014</strong></p>
+                                <br />
+                                <button type="button" class="btn btn-default" data-dismiss="modal"><i class="fa fa-times"></i> Close</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="portfolio-modal modal fade" id="portfolioWeb11" tabindex="-1" role="dialog" aria-hidden="true">
+            <div class="modal-content">
+                <div class="close-modal" data-dismiss="modal">
+                    <div class="lr">
+                        <div class="rl"> </div>
+                    </div>
+                </div>
+                <div class="container">
+                    <div class="row">
+                        <div class="col-lg-8 col-lg-offset-2">
+                            <div class="modal-body">
+                                <h2>彈彈堂3-聖誕同樂</h2>
+                                <hr class="star-primary">
+                                <img src="img/portfolio/webwork_11.jpg" class="img-responsive img-centered" alt="">
+                                <p>Html、CSS、Photoshop、Flash</p>
+                                <br />
+                                <p>Date:<strong>November 2013</strong></p>
+                                <br />
+                                <button type="button" class="btn btn-default" data-dismiss="modal"><i class="fa fa-times"></i> Close</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="portfolio-modal modal fade" id="portfolioWeb12" tabindex="-1" role="dialog" aria-hidden="true">
+            <div class="modal-content">
+                <div class="close-modal" data-dismiss="modal">
+                    <div class="lr">
+                        <div class="rl"> </div>
+                    </div>
+                </div>
+                <div class="container">
+                    <div class="row">
+                        <div class="col-lg-8 col-lg-offset-2">
+                            <div class="modal-body">
+                                <h2>彈彈堂3-聖誕狂歡會</h2>
+                                <hr class="star-primary">
+                                <img src="img/portfolio/webwork_12.jpg" class="img-responsive img-centered" alt="">
+                                <p>Html、CSS、Photoshop、Flash、JQuery</p>
+                                <br />
+                                <p><a href="http://event.61.com.tw/taomee_event/201412_DDT3_xmas/" target="_blank">連結 Link</a></p>
+                                <br />
+                                <p>Date:<strong>November 2014</strong></p>
+                                <br />
+                                <button type="button" class="btn btn-default" data-dismiss="modal"><i class="fa fa-times"></i> Close</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="portfolio-modal modal fade" id="portfolioWeb13" tabindex="-1" role="dialog" aria-hidden="true">
+            <div class="modal-content">
+                <div class="close-modal" data-dismiss="modal">
+                    <div class="lr">
+                        <div class="rl"> </div>
+                    </div>
+                </div>
+                <div class="container">
+                    <div class="row">
+                        <div class="col-lg-8 col-lg-offset-2">
+                            <div class="modal-body">
+                                <h2>淘米套圈圈</h2>
+                                <hr class="star-primary">
+                                <img src="img/portfolio/webwork_13.jpg" class="img-responsive img-centered" alt="">
+                                <p>Html、CSS、Photoshop、Flash</p>
+                                <br />
+                                <p><a href="http://event.61.com.tw/taomee_event/event-center/index.php/kids/runner/index" target="_blank">連結 Link</a></p>
+                                <br />
+                                <p>Date:<strong>March 2014</strong></p>
+                                <br />
+                                <button type="button" class="btn btn-default" data-dismiss="modal"><i class="fa fa-times"></i> Close</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="portfolio-modal modal fade" id="portfolioWeb14" tabindex="-1" role="dialog" aria-hidden="true">
+            <div class="modal-content">
+                <div class="close-modal" data-dismiss="modal">
+                    <div class="lr">
+                        <div class="rl"> </div>
+                    </div>
+                </div>
+                <div class="container">
+                    <div class="row">
+                        <div class="col-lg-8 col-lg-offset-2">
+                            <div class="modal-body">
+                                <h2>媽咪您辛苦了</h2>
+                                <hr class="star-primary">
+                                <img src="img/portfolio/webwork_14.jpg" class="img-responsive img-centered" alt="">
+                                <p>Html、CSS、Photoshop</p>
+                                <br />
+                                <p><a href="http://event.61.com.tw/taomee_event/201405_mom/" target="_blank">連結 Link</a></p>
+                                <br />
+                                <p>Date:<strong>April 2014</strong></p>
+                                <br />
+                                <button type="button" class="btn btn-default" data-dismiss="modal"><i class="fa fa-times"></i> Close</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="portfolio-modal modal fade" id="portfolioWeb15" tabindex="-1" role="dialog" aria-hidden="true">
+            <div class="modal-content">
+                <div class="close-modal" data-dismiss="modal">
+                    <div class="lr">
+                        <div class="rl"> </div>
+                    </div>
+                </div>
+                <div class="container">
+                    <div class="row">
+                        <div class="col-lg-8 col-lg-offset-2">
+                            <div class="modal-body">
+                                <h2>Happy Halloween</h2>
+                                <hr class="star-primary">
+                                <img src="img/portfolio/webwork_15.jpg" class="img-responsive img-centered" alt="">
+                                <p>Html、CSS、Photoshop、Flash、JQuery</p>
+                                <br />
+                                <p><a href="http://event.61.com.tw/taomee_event/event-center/201411_halloween/runner/index" target="_blank">連結 Link</a></p>
+                                <br />
+                                <p>Date:<strong>October 2014</strong></p>
+                                <br />
+                                <button type="button" class="btn btn-default" data-dismiss="modal"><i class="fa fa-times"></i> Close</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="portfolio-modal modal fade" id="portfolioWeb16" tabindex="-1" role="dialog" aria-hidden="true">
+            <div class="modal-content">
+                <div class="close-modal" data-dismiss="modal">
+                    <div class="lr">
+                        <div class="rl"> </div>
+                    </div>
+                </div>
+                <div class="container">
+                    <div class="row">
+                        <div class="col-lg-8 col-lg-offset-2">
+                            <div class="modal-body">
+                                <h2>用愛彌補-畫出自己的故事書</h2>
+                                <hr class="star-primary">
+                                <img src="img/portfolio/webwork_16.jpg" class="img-responsive img-centered" alt="">
+                                <p>Html、CSS、Photoshop、Flash</p>
+                                <br />
+                                <p><a href="http://event.61.com.tw/taomee_event/201505_charity/" target="_blank">連結 Link</a></p>
+                                <br />
+                                <p>Date:<strong>May 2015</strong></p>
+                                <br />
+                                <button type="button" class="btn btn-default" data-dismiss="modal"><i class="fa fa-times"></i> Close</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="portfolio-modal modal fade" id="portfolioWeb17" tabindex="-1" role="dialog" aria-hidden="true">
+            <div class="modal-content">
+                <div class="close-modal" data-dismiss="modal">
+                    <div class="lr">
+                        <div class="rl"> </div>
+                    </div>
+                </div>
+                <div class="container">
+                    <div class="row">
+                        <div class="col-lg-8 col-lg-offset-2">
+                            <div class="modal-body">
+                                <h2>小花仙遊戲官方網站</h2>
+                                <hr class="star-primary">
+                                <img src="img/portfolio/webwork_17.jpg" class="img-responsive img-centered" alt="">
+                                <p>Html、CSS、Photoshop</p>
+                                <br />
+                                <p><a href="http://huamain.61.com.tw/" target="_blank">連結 Link</a></p>
+                                <br />
+                                <p>Date:<strong>December 2013</strong></p>
+                                <br />
+                                <button type="button" class="btn btn-default" data-dismiss="modal"><i class="fa fa-times"></i> Close</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="portfolio-modal modal fade" id="portfolioWeb18" tabindex="-1" role="dialog" aria-hidden="true">
+            <div class="modal-content">
+                <div class="close-modal" data-dismiss="modal">
+                    <div class="lr">
+                        <div class="rl"> </div>
+                    </div>
+                </div>
+                <div class="container">
+                    <div class="row">
+                        <div class="col-lg-8 col-lg-offset-2">
+                            <div class="modal-body">
+                                <h2>熱血精靈派遊戲官方網站</h2>
+                                <hr class="star-primary">
+                                <img src="img/portfolio/webwork_18.jpg" class="img-responsive img-centered" alt="">
+                                <p>Html、CSS、Photoshop</p>
+                                <br />
+                                <p><a href="http://jl.61.com.tw/home" target="_blank">連結 Link</a></p>
+                                <br />
+                                <p>Date:<strong>February 2014</strong></p>
+                                <br />
+                                <button type="button" class="btn btn-default" data-dismiss="modal"><i class="fa fa-times"></i> Close</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="portfolio-modal modal fade" id="portfolioWeb19" tabindex="-1" role="dialog" aria-hidden="true">
+            <div class="modal-content">
+                <div class="close-modal" data-dismiss="modal">
+                    <div class="lr">
+                        <div class="rl"> </div>
+                    </div>
+                </div>
+                <div class="container">
+                    <div class="row">
+                        <div class="col-lg-8 col-lg-offset-2">
+                            <div class="modal-body">
+                                <h2>Acer Liquid Life</h2>
+                                <hr class="star-primary">
+                                <img src="img/portfolio/webwork_19.jpg" class="img-responsive img-centered" alt="">
+                                <p>Html、CSS、Photoshop</p>
+                                <br />
+                                <p><a href="https://www.liquidlife.today/" target="_blank">連結 Link</a></p>
+                                <br />
+                                <p>Date:<strong>2017</strong></p>
+                                <br />
+                                <button type="button" class="btn btn-default" data-dismiss="modal"><i class="fa fa-times"></i> Close</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="portfolio-modal modal fade" id="portfolioWeb20" tabindex="-1" role="dialog" aria-hidden="true">
+            <div class="modal-content">
+                <div class="close-modal" data-dismiss="modal">
+                    <div class="lr">
+                        <div class="rl"> </div>
+                    </div>
+                </div>
+                <div class="container">
+                    <div class="row">
+                        <div class="col-lg-8 col-lg-offset-2">
+                            <div class="modal-body">
+                                <h2>104徵才 台達之星</h2>
+                                <hr class="star-primary">
+                                <img src="img/portfolio/webwork_20.jpg" class="img-responsive img-centered" alt="">
+                                <p>Html、CSS、Photoshop</p>
+                                <br />
+                                <p>Date:<strong>2017</strong></p>
+                                <br />
+                                <button type="button" class="btn btn-default" data-dismiss="modal"><i class="fa fa-times"></i> Close</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="portfolio-modal modal fade" id="portfolioWeb21" tabindex="-1" role="dialog" aria-hidden="true">
+            <div class="modal-content">
+                <div class="close-modal" data-dismiss="modal">
+                    <div class="lr">
+                        <div class="rl"> </div>
+                    </div>
+                </div>
+                <div class="container">
+                    <div class="row">
+                        <div class="col-lg-8 col-lg-offset-2">
+                            <div class="modal-body">
+                                <h2>Office 2016</h2>
+                                <hr class="star-primary">
+                                <img src="img/portfolio/webwork_21.jpg" class="img-responsive img-centered" alt="">
+                                <p>Html、CSS、Photoshop</p>
+                                <br />
+                                <p>Date:<strong>2016</strong></p>
+                                <br />
+                                <button type="button" class="btn btn-default" data-dismiss="modal"><i class="fa fa-times"></i> Close</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="portfolio-modal modal fade" id="portfolioWeb22" tabindex="-1" role="dialog" aria-hidden="true">
+            <div class="modal-content">
+                <div class="close-modal" data-dismiss="modal">
+                    <div class="lr">
+                        <div class="rl"> </div>
+                    </div>
+                </div>
+                <div class="container">
+                    <div class="row">
+                        <div class="col-lg-8 col-lg-offset-2">
+                            <div class="modal-body">
+                                <h2>Visual Studio</h2>
+                                <hr class="star-primary">
+                                <img src="img/portfolio/webwork_22.jpg" class="img-responsive img-centered" alt="">
+                                <p>Html、CSS、Photoshop</p>
+                                <br />
+                                <p>Date:<strong>2017</strong></p>
+                                <br />
+                                <button type="button" class="btn btn-default" data-dismiss="modal"><i class="fa fa-times"></i> Close</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="portfolio-modal modal fade" id="portfolioWeb23" tabindex="-1" role="dialog" aria-hidden="true">
+            <div class="modal-content">
+                <div class="close-modal" data-dismiss="modal">
+                    <div class="lr">
+                        <div class="rl"> </div>
+                    </div>
+                </div>
+                <div class="container">
+                    <div class="row">
+                        <div class="col-lg-8 col-lg-offset-2">
+                            <div class="modal-body">
+                                <h2>Luxgen 天菜指南</h2>
+                                <hr class="star-primary">
+                                <img src="img/portfolio/webwork_23.jpg" class="img-responsive img-centered" alt="">
+                                <p>Html、CSS、Photoshop</p>
+                                <br />
+                                <p>Date:<strong>2017</strong></p>
+                                <br />
+                                <button type="button" class="btn btn-default" data-dismiss="modal"><i class="fa fa-times"></i> Close</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!--illustration插畫作品集內頁-->
+        <div class="portfolio-modal modal fade" id="portfolioIll1" tabindex="-1" role="dialog" aria-hidden="true">
+            <div class="modal-content">
+                <div class="close-modal" data-dismiss="modal">
+                    <div class="lr">
+                        <div class="rl"> </div>
+                    </div>
+                </div>
+                <div class="container">
+                    <div class="row">
+                        <div class="col-lg-8 col-lg-offset-2">
+                            <div class="modal-body">
+                                <h2>Lan Portfolio</h2>
+                                <hr class="star-primary">
+                                <img src="img/portfolio/illwork_01.jpg" class="img-responsive img-centered" alt="">
+                                <p>Photoshop、簽字筆</p>
+                                <br />
+                                <p>Date:<strong>May 2012</strong></p>
+                                <br />
+                                <button type="button" class="btn btn-default" data-dismiss="modal"><i class="fa fa-times"></i> Close</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="portfolio-modal modal fade" id="portfolioIll2" tabindex="-1" role="dialog" aria-hidden="true">
+            <div class="modal-content">
+                <div class="close-modal" data-dismiss="modal">
+                    <div class="lr">
+                        <div class="rl"> </div>
+                    </div>
+                </div>
+                <div class="container">
+                    <div class="row">
+                        <div class="col-lg-8 col-lg-offset-2">
+                            <div class="modal-body">
+                                <h2>皮毛的春天 繪本</h2>
+                                <hr class="star-primary">
+                                <img src="img/portfolio/illwork_02.jpg" class="img-responsive img-centered" alt="">
+                                <p>Photoshop、壓克力</p>
+                                <br />
+                                <p>皮毛，是一隻非常怕冷的北極熊，他覺得奇怪為什麼北極總是這麼冷呢，時常被同伴嘲笑，某天一氣之下他離家出走，走去尋找他的春天。</p>
+                                <br />
+                                <p>Date:<strong>2012</strong></p>
+                                <br />
+                                <button type="button" class="btn btn-default" data-dismiss="modal"><i class="fa fa-times"></i> Close</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="portfolio-modal modal fade" id="portfolioIll3" tabindex="-1" role="dialog" aria-hidden="true">
+            <div class="modal-content">
+                <div class="close-modal" data-dismiss="modal">
+                    <div class="lr">
+                        <div class="rl"> </div>
+                    </div>
+                </div>
+                <div class="container">
+                    <div class="row">
+                        <div class="col-lg-8 col-lg-offset-2">
+                            <div class="modal-body">
+                                <h2>童趣</h2>
+                                <hr class="star-primary">
+                                <img src="img/portfolio/illwork_03.jpg" class="img-responsive img-centered" alt="">
+                                <p>代針筆</p>
+                                <br />
+                                <p>Date:<strong>2012</strong></p>
+                                <br />
+                                <button type="button" class="btn btn-default" data-dismiss="modal"><i class="fa fa-times"></i> Close</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="portfolio-modal modal fade" id="portfolioIll4" tabindex="-1" role="dialog" aria-hidden="true">
+            <div class="modal-content">
+                <div class="close-modal" data-dismiss="modal">
+                    <div class="lr">
+                        <div class="rl"> </div>
+                    </div>
+                </div>
+                <div class="container">
+                    <div class="row">
+                        <div class="col-lg-8 col-lg-offset-2">
+                            <div class="modal-body">
+                                <h2>地心引力</h2>
+                                <hr class="star-primary">
+                                <img src="img/portfolio/illwork_04.jpg" class="img-responsive img-centered" alt="">
+                                <p>Photoshop</p>
+                                <br />
+                                <p>Date:<strong>2011</strong></p>
+                                <br />
+                                <button type="button" class="btn btn-default" data-dismiss="modal"><i class="fa fa-times"></i> Close</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="portfolio-modal modal fade" id="portfolioIll5" tabindex="-1" role="dialog" aria-hidden="true">
+            <div class="modal-content">
+                <div class="close-modal" data-dismiss="modal">
+                    <div class="lr">
+                        <div class="rl"> </div>
+                    </div>
+                </div>
+                <div class="container">
+                    <div class="row">
+                        <div class="col-lg-8 col-lg-offset-2">
+                            <div class="modal-body">
+                                <h2>Hey!Thief</h2>
+                                <hr class="star-primary">
+                                <img src="img/portfolio/illwork_05.jpg" class="img-responsive img-centered" alt="">
+                                <p>Flash、ActionScript3.0</p>
+                                <br />
+                                <p>這是一款flash小遊戲，故事緣由：隨著地球暖化的嚴重，企鵝們發現是人類太浪費電導致的，所以他們就計畫展開一場偷電革命！</p>
+                                <br />
+                                <p>Date:<strong>2012</strong></p>
+                                <br />
+                                <button type="button" class="btn btn-default" data-dismiss="modal"><i class="fa fa-times"></i> Close</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="portfolio-modal modal fade" id="portfolioIll6" tabindex="-1" role="dialog" aria-hidden="true">
+            <div class="modal-content">
+                <div class="close-modal" data-dismiss="modal">
+                    <div class="lr">
+                        <div class="rl"> </div>
+                    </div>
+                </div>
+                <div class="container">
+                    <div class="row">
+                        <div class="col-lg-8 col-lg-offset-2">
+                            <div class="modal-body">
+                                <h2>互動遊戲角色設計</h2>
+                                <hr class="star-primary">
+                                <img src="img/portfolio/illwork_06.jpg" class="img-responsive img-centered" alt="">
+                                <p>Flash</p>
+                                <br />
+                                <p>這是用webcam偵測人臉，玩家能從12個角色中，選擇自己喜歡的，跟朋友PK！</p>
+                                <br />
+                                <p>Date:<strong>2012</strong></p>
+                                <br />
+                                <button type="button" class="btn btn-default" data-dismiss="modal"><i class="fa fa-times"></i> Close</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="portfolio-modal modal fade" id="portfolioIll7" tabindex="-1" role="dialog" aria-hidden="true">
+            <div class="modal-content">
+                <div class="close-modal" data-dismiss="modal">
+                    <div class="lr">
+                        <div class="rl"> </div>
+                    </div>
+                </div>
+                <div class="container">
+                    <div class="row">
+                        <div class="col-lg-8 col-lg-offset-2">
+                            <div class="modal-body">
+                                <h2>NOT! MINE!</h2>
+                                <hr class="star-primary">
+                                <img src="img/portfolio/illwork_07.jpg" class="img-responsive img-centered" alt="">
+                                <p>Flash、ActionScript3.0</p>
+                                <br />
+                                <p>這是一款Flash小遊戲，小明某天回家，因為拿錯別人的０分考卷，而跟媽媽展開一場追殺戰！</p>
+                                <br />
+                                <p>Date:<strong>2011</strong></p>
+                                <br />
+                                <button type="button" class="btn btn-default" data-dismiss="modal"><i class="fa fa-times"></i> Close</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="portfolio-modal modal fade" id="portfolioIll8" tabindex="-1" role="dialog" aria-hidden="true">
+            <div class="modal-content">
+                <div class="close-modal" data-dismiss="modal">
+                    <div class="lr">
+                        <div class="rl"> </div>
+                    </div>
+                </div>
+                <div class="container">
+                    <div class="row">
+                        <div class="col-lg-8 col-lg-offset-2">
+                            <div class="modal-body">
+                                <h2>朝代插畫小圖</h2>
+                                <hr class="star-primary">
+                                <img src="img/portfolio/illwork_08.jpg" class="img-responsive img-centered" alt="">
+                                <p>代針筆</p>
+                                <br />
+                                <p>Date:<strong>2013</strong></p>
+                                <br />
+                                <button type="button" class="btn btn-default" data-dismiss="modal"><i class="fa fa-times"></i> Close</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!--ui UI作品集內頁-->
+        <div class="portfolio-modal modal fade" id="portfolioUi01" tabindex="-1" role="dialog" aria-hidden="true">
+            <div class="modal-content">
+                <div class="close-modal" data-dismiss="modal">
+                    <div class="lr">
+                        <div class="rl"> </div>
+                    </div>
+                </div>
+                <div class="container">
+                    <div class="row">
+                        <div class="col-lg-8 col-lg-offset-2">
+                            <div class="modal-body">
+                                <h2>米樂町－娛樂平台APP</h2>
+                                <hr class="star-primary">
+                                <img src="img/portfolio/uiwork_01.jpg" class="img-responsive img-centered" alt="">
+                                <p>Photoshop、Illustrator</p>
+                                <br />
+                                <p>Date:<strong>June 2015</strong></p>
+                                <br />
+                                <button type="button" class="btn btn-default" data-dismiss="modal"><i class="fa fa-times"></i> Close</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+</body>
+
+</html>
